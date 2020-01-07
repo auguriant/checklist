@@ -35,8 +35,8 @@
           <div class="panel panel-default">
 
             <div class="panel-heading">
-              <h2>Sipariş Listesi</h2>
-              <p class="text-muted">Sıralama Kısmı Gelecek</p>
+              <h2>Project checklist</h2>
+              <p class="text-muted">Webdesigner's checklist with persistant storage</p>
             </div><!-- /.panel-heading -->
 
             <div class="panel-body">
@@ -51,8 +51,8 @@
 
                     <div class="col-xs-6">
                       <div class="progress pull-right hidden-xs">
-                        <div class="progress-label">Durum</div>
-                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="{{ sipariş.items | kaldı | yüzde ürün.items }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ task.items | remaining | percentage task.items }}%;">
+                        <div class="progress-label">Progress</div>
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="{{ task.items | remaining | percentage task.items }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ task.items | remaining | percentage task.items }}%;">
                           {{ task.items | remaining | percentage task.items }}%
                         </div>
                       </div>
@@ -82,7 +82,7 @@
             </div><!-- /.panel-body -->
 
             <div class="panel-footer clearfix">
-             
+              <span class="pull-left text-muted">♥ from <a href="http://imaginarydesign.co.uk/" target="_blank">Adam</a></span>
               <button class="btn btn-sm btn-default pull-right" v-on:click="resetChecked" id="resetChecked">Reset</button>
             </div><!-- /.panel-footer -->
 
